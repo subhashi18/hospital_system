@@ -79,10 +79,14 @@ void registerPatient(void);
 void displayPatientsByPriority(void);
 
 //file handling
-
 void saveBeds(void);
 void loadBeds(void);
 void savePatientRecord(int index);
+
+//report
+void displayAnalytics(void);
+double calculateWardOccupancy(int ward);
+
 
 
 

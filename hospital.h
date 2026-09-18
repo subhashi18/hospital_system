@@ -75,6 +75,12 @@ double calculateFinalPayable(double gross, double discount);
 //patient
 void registerPatient(void);
 
+//priority
+void displayPatientsByPriority(void);
+
+
+
+
 
 
 #endif

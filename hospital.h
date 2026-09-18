@@ -74,6 +74,10 @@ double calculateFinalPayable(double gross, double discount);
 
 //patient
 void registerPatient(void);
+void displayAllPatients(void);
+void displayPatientBill(int index);
+
+
 
 //priority
 void displayPatientsByPriority(void);
@@ -86,9 +90,6 @@ void savePatientRecord(int index);
 //report
 void displayAnalytics(void);
 double calculateWardOccupancy(int ward);
-
-
-
 
 
 

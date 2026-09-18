@@ -6,6 +6,12 @@ const double specialtyFees[NUM_SPECIALTIES] ={1500.00,2500.00,4500.00,5000.00};
 const int consultationTimes[NUM_SPECIALTIES] ={15,20,30,30};
 const int specialtyCaps[NUM_SPECIALTIES] ={30,20,12,10};
 
+//ward
+const char *wardNames[NUM_WARDS] ={"General Ward","Paediatric Ward","Surgical Ward","ICU (Intensive Care Unit)"};
+const double wardRates[NUM_WARDS] ={3000.00,6000.00,12000.00,25000.00};
+const int wardCapacities[NUM_WARDS] ={20,10,10,5};
+
+
 //specialties
 void displaySpecialties(void)
 {
@@ -21,3 +27,16 @@ void displaySpecialties(void)
     }
 }
 
+//wards
+void displayWards(void)
+{
+    int i;
+
+    printf("\n------------------------- HOSPITAL WARDS -------------------------------\n");
+    printf("%-5s %-32s %-15s %-10s\n","ID","Ward","Rate/Day","Capacity");
+
+    for (i = 0; i < NUM_WARDS; i++)
+    {
+        printf("%-5d %-32s LKR %-10.2f %-10d\n",i + 1,wardNames[i],wardRates[i],wardCapacities[i]);
+    }
+}

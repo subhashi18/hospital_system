@@ -16,7 +16,13 @@ extern const double specialtyFees[NUM_SPECIALTIES];
 extern const int consultationTimes[NUM_SPECIALTIES];
 extern const int specialtyCaps[NUM_SPECIALTIES];
 
+//wards
+extern const char *wardNames[NUM_WARDS];
+extern const double wardRates[NUM_WARDS];
+extern const int wardCapacities[NUM_WARDS];
+
+
 //hospital data
 void displaySpecialties(void);
-
+void displayWards(void);
 #endif

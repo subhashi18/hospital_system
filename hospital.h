@@ -60,4 +60,11 @@ void displayWards(void);
 void displayBedOccupancy(void);
 int findAvailableBed(int ward);
 
+//input
+void clearInputBuffer(void);
+int getIntInRange(const char *message, int min, int max);
+void readLine(char text[], int size);
+
+
+
 #endif

@@ -28,3 +28,42 @@ int specialtyQueue[NUM_SPECIALTIES] = {0};
 int patientCount = 0;
 
 
+void clearInputBuffer(void)
+{
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF)
+    {
+    }
+}
+
+void readLine(char text[], int size)
+{
+    fgets(text, size, stdin);
+    text[strcspn(text, "\n")] = '\0';
+}
+
+int getIntInRange(const char *message, int min, int max)
+{
+    int value;
+
+    while (1)
+    {
+        printf("%s", message);
+        if (scanf("%d", &value) == 1)
+        {
+            if (value >= min && value <= max)
+            {
+                clearInputBuffer();
+                return value;
+            }
+        }
+
+        printf("Invalid input. Please try again.\n");
+        clearInputBuffer();
+    }
+}
+
+
+
+
+

@@ -78,6 +78,11 @@ void registerPatient(void);
 //priority
 void displayPatientsByPriority(void);
 
+//file handling
+
+void saveBeds(void);
+void loadBeds(void);
+void savePatientRecord(int index);
 
 
 

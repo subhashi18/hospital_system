@@ -24,7 +24,35 @@ extern const int wardCapacities[NUM_WARDS];
 //bed
 extern int bedOccupancy[NUM_WARDS][MAX_BEDS];
 
+//patient
+//patient
+extern char patientId[MAX_PATIENTS][20];
+extern char patientName[MAX_PATIENTS][NAME_LENGTH];
 
+extern int patientAge[MAX_PATIENTS];
+extern int urgencyLevel[MAX_PATIENTS];
+extern int specialtyId[MAX_PATIENTS];
+
+//addmision
+extern int admitted[MAX_PATIENTS];
+extern int wardId[MAX_PATIENTS];
+extern int daysAdmitted[MAX_PATIENTS];
+extern int assignedBed[MAX_PATIENTS];
+
+//register
+extern int registrationOrder[MAX_PATIENTS];
+
+//billing
+extern double baseFee[MAX_PATIENTS];
+extern double surcharge[MAX_PATIENTS];
+extern double wardCost[MAX_PATIENTS];
+extern double grossTotal[MAX_PATIENTS];
+extern double discount[MAX_PATIENTS];
+extern double finalPayable[MAX_PATIENTS];
+extern double waitingTime[MAX_PATIENTS];
+
+extern int specialtyQueue[NUM_SPECIALTIES];
+extern int patientCount;
 
 //hospital data
 void displaySpecialties(void);

@@ -25,15 +25,13 @@ extern const int wardCapacities[NUM_WARDS];
 extern int bedOccupancy[NUM_WARDS][MAX_BEDS];
 
 //patient
-//patient
 extern char patientId[MAX_PATIENTS][20];
 extern char patientName[MAX_PATIENTS][NAME_LENGTH];
-
 extern int patientAge[MAX_PATIENTS];
 extern int urgencyLevel[MAX_PATIENTS];
 extern int specialtyId[MAX_PATIENTS];
 
-//addmision
+//addmission
 extern int admitted[MAX_PATIENTS];
 extern int wardId[MAX_PATIENTS];
 extern int daysAdmitted[MAX_PATIENTS];
@@ -64,6 +62,16 @@ int findAvailableBed(int ward);
 void clearInputBuffer(void);
 int getIntInRange(const char *message, int min, int max);
 void readLine(char text[], int size);
+
+//billing
+
+double calculateWaitingTime(int specialty, int queueCount);
+double calculateEmergencySurcharge(double fee, int urgency);
+double calculateWardCost(int ward, int days);
+double calculateGrossTotal(double fee, double surcharge, double wardCost);
+double calculateAgeDiscount(double gross, int age);
+double calculateFinalPayable(double gross, double discount);
+
 
 
 

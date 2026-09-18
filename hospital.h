@@ -72,6 +72,8 @@ double calculateGrossTotal(double fee, double surcharge, double wardCost);
 double calculateAgeDiscount(double gross, int age);
 double calculateFinalPayable(double gross, double discount);
 
+//patient
+void registerPatient(void);
 
 
 

@@ -21,8 +21,15 @@ extern const char *wardNames[NUM_WARDS];
 extern const double wardRates[NUM_WARDS];
 extern const int wardCapacities[NUM_WARDS];
 
+//bed
+extern int bedOccupancy[NUM_WARDS][MAX_BEDS];
+
+
 
 //hospital data
 void displaySpecialties(void);
 void displayWards(void);
+void displayBedOccupancy(void);
+int findAvailableBed(int ward);
+
 #endif

@@ -1,0 +1,2 @@
+PAT-1001 | 5 | Age: 5 | Urgency: 1 | Specialty: General Practice (OPD) | Final Bill: LKR 4500.00
+PAT-1001 | H M S P Herath | Age: 23 | Urgency: 2 | Specialty: Paediatrics | Final Bill: LKR 63000.00
